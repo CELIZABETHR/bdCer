@@ -12,7 +12,7 @@ Consultas
 3.select c.detalle from comentario as c inner join usuarios as u on (c.usuario_id < usuario_id) where u.nombre where u nombre='u' 
 4.select count c.checklist from tarea as c inner join tarea as u on(tarea.id=checklist.id) where tarea.nombre='t'
 5.select c.detalle from comentario as c inner join usuarios as u on (c.usuario_id < usuario_id) where u.nombre where u nombre='u' orden by c.detalle
-6.select c.detalle from comentario as c inner join usuarios as u on (c.usuario_id < usuario_id) where u.nombre where u nombre='u' orden by desc c.detalle
+6.select c.detalle from comentario as c inner join usuarios as u on (c.usuario_id < usuario_id) where u.nombre where u nombre='u' orden by c.detalle desc
 7.select c.detalle from comentario as c inner join usuarios as z on (c.usuario_id < usuario_id) where z.nombre where z nombre='z'
 8.select count(*) t.detalle from tarea as t inner join usuarios as z on (t.usuario_id < usuario_id) where z.nombre where z nombre='z' 
 9.select fecha_realizado from comentario limit 1
